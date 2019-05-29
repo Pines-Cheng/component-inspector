@@ -17,5 +17,5 @@ initComponentInspector({
   },
   getInstanceRootNode: function (instance) {
     return window._instMap.get(instance) || null
-  }
+  },
 })

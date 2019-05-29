@@ -1,8 +1,10 @@
 import React, { options } from 'react'
 import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader';
 import App from './containers/App'
 import 'todomvc-app-css/index.css'
+
+// Nerv Component Inspector
+import '../../dist/nerv'
 
 window._instMap = new Map()
 React.options.afterMount = (inst) => {
@@ -20,9 +22,9 @@ const render = Component => {
 
 render(App)
 
-// // Webpack Hot Module Replacement API
-// if (module.hot) {
-//   module.hot.accept('./containers/App', () => {
-//     render(App);
-//   });
-// }
+// Webpack Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept('./containers/App', () => {
+    render(App);
+  });
+}

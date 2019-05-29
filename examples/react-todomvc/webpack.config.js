@@ -10,7 +10,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     bundle: [
-      'react-hot-loader/patch',
+      // 'react-hot-loader/patch',
       './index'
     ]
   },
@@ -23,7 +23,7 @@ module.exports = {
     new webpack.DefinePlugin({
       OPEN_FILE_URL: '"/open-in-editor"',
       SOURCE_FRAGMENT: '"/source-fragment"',
-      REMPL_SERVER: '"localhost:8177"'
+      // REMPL_SERVER: '"localhost:8177"' // net::ERR_CONNECTION_REFUSED 报错
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
@@ -52,7 +52,7 @@ module.exports = {
                 'babel-plugin-transform-class-properties',
                 'babel-plugin-transform-function-bind',
                 'babel-plugin-transform-object-rest-spread',
-                'react-hot-loader/babel',
+                // 'react-hot-loader/babel',
                 require('babel-plugin-source-wrapper').configure({
                   // webpack sends absolute paths to plugins
                   // but we need paths relative to project root
