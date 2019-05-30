@@ -1,9 +1,9 @@
 {
-  "name": "component-inspector",
+  "name": "nerv-component-inspector",
   "title": "Component inspector",
   "description": "Component DOM inspector",
-  "version": "1.6.0",
-  "repository": "lahmatiy/component-inspector",
+  "version": "0.0.1",
+  "repository": "Pines-Cheng/component-inspector",
   "keywords": [
     "frontend",
     "component",
