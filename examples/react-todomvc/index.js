@@ -4,14 +4,8 @@ import App from './containers/App'
 import 'todomvc-app-css/index.css'
 
 // Nerv Component Inspector
-import '../../dist/nerv'
-
-window._instMap = new Map()
-React.options.afterMount = (inst) => {
-  window._instMap.set(inst.dom, inst)
-  window._instMap.set(inst, inst.dom)
-  console.log(inst)
-}
+import ComponentInspector from '../../index'
+ComponentInspector.init(React)
 
 const render = Component => {
   window.ComponentRoot = ReactDOM.render(
