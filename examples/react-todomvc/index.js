@@ -5,6 +5,7 @@ import 'todomvc-app-css/index.css'
 
 // Nerv Component Inspector
 import ComponentInspector from '../../index'
+// import ComponentInspector from 'nerv-component-inspector'
 ComponentInspector.init(React)
 
 const render = Component => {

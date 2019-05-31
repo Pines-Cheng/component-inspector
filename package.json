@@ -2,6 +2,7 @@
   "name": "nerv-component-inspector",
   "title": "Component inspector",
   "description": "Component DOM inspector",
+  "main": "index.js",
   "version": "0.0.1",
   "repository": "Pines-Cheng/component-inspector",
   "keywords": [
