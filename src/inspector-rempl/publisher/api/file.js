@@ -45,6 +45,7 @@ module.exports = {
   isOpenFileSupported: isOpenFileSupported,
   openFile: function(filename) {
     if (isOpenFileSupported()) {
+      console.warn('exports openFile',filename)
       openFile(filename);
     } else {
       console.warn('`Open file in editor` is not supported');

@@ -8,6 +8,7 @@ var hideTimer;
 function openRefLocation(e) {
   var loc = e.target.getAttribute('data-loc');
   if (loc) {
+    console.warn('ref location openFile',loc)
     openFile(loc);
   }
 }

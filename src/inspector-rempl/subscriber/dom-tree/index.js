@@ -70,6 +70,7 @@ var DOMNode = Node.subclass({
       if (this.data.nestedView && this.data.domNodeId) {
         remoteDomTree.callRemote('selectNodeById', this.data.domNodeId);
       } else if (hoverNode.value && hoverNode.value.data.loc) {
+        console.warn('openFile',hoverNode.value.data.loc)
         openFile(hoverNode.value.data.loc);
       }
     }
