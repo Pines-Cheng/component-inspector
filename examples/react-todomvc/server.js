@@ -8,20 +8,20 @@ const PORT = process.env.PORT || 3000;
 const options = {
   publicPath: config.output.publicPath,
   contentBase: '.',
-  hot: true,
+  // hot: true,
   host: 'localhost',
   historyApiFallback: true,
   stats: {
     colors: true
   },
-  before(app) {
-    app.use('/open-in-editor', openInEditor({
-      cwd: __dirname
-    }));
-    app.use('/source-fragment', sourceFragment({
-      cwd: __dirname
-    }));
-  }
+  // before(app) {
+  //   app.use('/open-in-editor', openInEditor({
+  //     cwd: __dirname
+  //   }));
+  //   app.use('/source-fragment', sourceFragment({
+  //     cwd: __dirname
+  //   }));
+  // }
 };
 
 WebpackDevServer.addDevServerEntrypoints(config, options);

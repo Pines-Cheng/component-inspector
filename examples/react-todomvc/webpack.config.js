@@ -26,7 +26,7 @@ module.exports = {
       // REMPL_SERVER: '"localhost:8177"' // net::ERR_CONNECTION_REFUSED 报错
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
     alias: {
